@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: exo 2;
+    background-image: url(fondo.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    color: white;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: beige;
+    
+}
+
+section {
+    margin-top: 0px; /* Ajusta según la altura de tu barra de navegación */
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    min-height: 600px; /* Ajusta según tus necesidades */
+    font-size: 20px;
+}
+  
+
+.informacion {
+  padding: 20px; /* Espaciado interno de la información */
+  margin-bottom: 20px; /* Agrega espacio debajo de la información */
+} 
+.recuadro {
+  border: 2px solid #333; /* Borde del recuadro */
+  padding: 20px; /* Espaciado interno del recuadro */
+  display: flex;
+  justify-content: space-around;
+}
+
+  
+  .recuadro img {
+    width: 250px; /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    margin-right: 250px; /* Espacio entre las imágenes */
+    height: auto; /* Mantiene la proporción de aspecto de las imágenes */
+    border: 1px solid #999; /* Borde alrededor de cada imagen */
+  }
+
+  
+  table {
+    font-size: 18px;
+    border-color: #0a0a0a;
+    width: 50%;
+    margin: 20px auto; /* Centrar la tabla */
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden; /* Evita que los bordes redondeados se vean afectados por el desbordamiento de contenido */
+}
+
+table, th, td {
+    border: 1px solid #0a0a0a; /* Bordes con color gris */
+}
+
+th, td {
+    padding: 15px;
+    text-align: center; /* Centrar contenido */
+    border-color: #0a0a0a;
+}
+
+th {
+    background-color: #4CAF50; /* Color de fondo para las celdas de encabezado */
+    color: white;
+    border-color: #0a0a0a;
+}
+
+tr:nth-child(even) {
+    border-color: #0a0a0a;
+    background-color: #f2f2f2; /* Color de fondo para filas pares */
+}
+.container {
+    
+    max-width: 1200px;
+    background-color: #06060670;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #bbc78b;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  button:hover {
+    background-color: #c2c5a3c6;
+
+  }
+
+  .TecnoClean {
+    background-color: #c22828; 
+    padding: 10px; /* Ajusta el espacio interno del Título 1 */
+  }
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
